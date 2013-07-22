@@ -5,6 +5,58 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <title>Happy Valentine's Day!</title>
+
+<meta property="og:title" content="Happy Valentine's Day"/>
+<meta property="og:type" content="cause"/>
+<meta property="og:url" content="http://allvalentine.com/"/>
+<meta property="og:image" content="http://allvalentine.com/valentine.jpg"/>
+<meta property="og:site_name" content="Happy Valentine's Day"/>
+<meta property="fb:admins" content="500108777"/>
+<meta property="og:description" content="You got a Valentine's Day message from your friend. Click the link above to see it!"/>
+
+
+  <link href="css/mb.YTVPlayer.css" media="all" rel="stylesheet" type="text/css">
+  <style type="text/css">
+    body{
+      margin:0;
+    }
+    #content{
+    }
+    .movie{
+      display:none;
+    }
+    a {
+	    color:#fa6565;
+    }
+    .dida {
+      background-color: #ca0000;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      font: 24px Arial, sans-serif;
+      color: #fff;
+      padding: 18px;
+      z-index: 1;
+    }
+    .dido {
+      font: 12px Arial, sans-serif;
+      color: #fa6565;
+    }
+
+  </style>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script type="text/javascript" src="inc/jquery.metadata.js"></script>
+  <script type="text/javascript" src="inc/jquery.mb.YTPlayer.js"></script>
+  <script type="text/javascript">
+    $(function(){
+      $(".movie").mb_YTPlayer();
+    });
+  </script>
+
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script><script type="text/javascript">stLight.options({publisher:'5c0223a9-ab21-4d29-ac33-8cfe4a0d41f0'});</script>
+
+
 </head>
 <body>
 
